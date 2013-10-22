@@ -21,6 +21,14 @@
 		264B204E18155DB300F88DF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B203018155DB300F88DF5 /* UIKit.framework */; };
 		264B205618155DB400F88DF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 264B205418155DB400F88DF5 /* InfoPlist.strings */; };
 		264B205818155DB400F88DF5 /* BaaSSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B205718155DB400F88DF5 /* BaaSSampleTests.m */; };
+		264B206218155E1200F88DF5 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B206118155E1200F88DF5 /* NCMB.framework */; };
+		264B206418155E6300F88DF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B206318155E6300F88DF5 /* SystemConfiguration.framework */; };
+		264B206618155E6D00F88DF5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B206518155E6D00F88DF5 /* MobileCoreServices.framework */; };
+		264B206818155E7600F88DF5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B206718155E7600F88DF5 /* AudioToolbox.framework */; };
+		264B206E18155FC600F88DF5 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 264B206A18155FC600F88DF5 /* CHANGELOG.md */; };
+		264B206F18155FC600F88DF5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B206C18155FC600F88DF5 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		264B207018155FC600F88DF5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 264B206D18155FC600F88DF5 /* README.md */; };
+		264B207318168B9E00F88DF5 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B207218168B9E00F88DF5 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,16 @@
 		264B205318155DB400F88DF5 /* BaaSSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaaSSampleTests-Info.plist"; sourceTree = "<group>"; };
 		264B205518155DB400F88DF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		264B205718155DB400F88DF5 /* BaaSSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaaSSampleTests.m; sourceTree = "<group>"; };
+		264B206118155E1200F88DF5 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NCMB.framework; sourceTree = "<group>"; };
+		264B206318155E6300F88DF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		264B206518155E6D00F88DF5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		264B206718155E7600F88DF5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		264B206A18155FC600F88DF5 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		264B206B18155FC600F88DF5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		264B206C18155FC600F88DF5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		264B206D18155FC600F88DF5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		264B207118168B9E00F88DF5 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		264B207218168B9E00F88DF5 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +78,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264B206818155E7600F88DF5 /* AudioToolbox.framework in Frameworks */,
+				264B206618155E6D00F88DF5 /* MobileCoreServices.framework in Frameworks */,
+				264B206418155E6300F88DF5 /* SystemConfiguration.framework in Frameworks */,
 				264B202F18155DB300F88DF5 /* CoreGraphics.framework in Frameworks */,
 				264B203118155DB300F88DF5 /* UIKit.framework in Frameworks */,
+				264B206218155E1200F88DF5 /* NCMB.framework in Frameworks */,
 				264B202D18155DB300F88DF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +123,10 @@
 		264B202B18155DB300F88DF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				264B206718155E7600F88DF5 /* AudioToolbox.framework */,
+				264B206518155E6D00F88DF5 /* MobileCoreServices.framework */,
+				264B206318155E6300F88DF5 /* SystemConfiguration.framework */,
+				264B206118155E1200F88DF5 /* NCMB.framework */,
 				264B202C18155DB300F88DF5 /* Foundation.framework */,
 				264B202E18155DB300F88DF5 /* CoreGraphics.framework */,
 				264B203018155DB300F88DF5 /* UIKit.framework */,
@@ -112,9 +138,12 @@
 		264B203218155DB300F88DF5 /* BaaSSample */ = {
 			isa = PBXGroup;
 			children = (
+				264B206918155FC600F88DF5 /* JSONKit-master */,
 				264B203B18155DB300F88DF5 /* AppDelegate.h */,
 				264B203C18155DB300F88DF5 /* AppDelegate.m */,
 				264B203E18155DB300F88DF5 /* Main.storyboard */,
+				264B207118168B9E00F88DF5 /* SignUpViewController.h */,
+				264B207218168B9E00F88DF5 /* SignUpViewController.m */,
 				264B204118155DB300F88DF5 /* ViewController.h */,
 				264B204218155DB300F88DF5 /* ViewController.m */,
 				264B204418155DB300F88DF5 /* Images.xcassets */,
@@ -150,6 +179,17 @@
 				264B205418155DB400F88DF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		264B206918155FC600F88DF5 /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				264B206A18155FC600F88DF5 /* CHANGELOG.md */,
+				264B206B18155FC600F88DF5 /* JSONKit.h */,
+				264B206C18155FC600F88DF5 /* JSONKit.m */,
+				264B206D18155FC600F88DF5 /* README.md */,
+			);
+			path = "JSONKit-master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +270,9 @@
 			files = (
 				264B204518155DB300F88DF5 /* Images.xcassets in Resources */,
 				264B203718155DB300F88DF5 /* InfoPlist.strings in Resources */,
+				264B207018155FC600F88DF5 /* README.md in Resources */,
 				264B204018155DB300F88DF5 /* Main.storyboard in Resources */,
+				264B206E18155FC600F88DF5 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				264B204318155DB300F88DF5 /* ViewController.m in Sources */,
+				264B207318168B9E00F88DF5 /* SignUpViewController.m in Sources */,
 				264B203D18155DB300F88DF5 /* AppDelegate.m in Sources */,
+				264B206F18155FC600F88DF5 /* JSONKit.m in Sources */,
 				264B203918155DB300F88DF5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,10 +422,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jabaraster/Documents/Develop/iOS/BaaSSample,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaaSSample/BaaSSample-Prefix.pch";
 				INFOPLIST_FILE = "BaaSSample/BaaSSample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +440,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jabaraster/Documents/Develop/iOS/BaaSSample,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaaSSample/BaaSSample-Prefix.pch";
 				INFOPLIST_FILE = "BaaSSample/BaaSSample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

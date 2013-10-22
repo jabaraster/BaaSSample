@@ -6,12 +6,36 @@
 //  Copyright (c) 2013年 河野 智遵. All rights reserved.
 //
 
+#import <NCMB/NCMB.h>
 #import "AppDelegate.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NCMB setApplicationKey:@"524dad28157666e9511105a0ff8850def201a9abf0962ff61e5cdf4438f0f031" clientKey:@"232ba8b39ad1808f0081c678c545f6726417a59a865684d7613b64d0bb4966b7"];
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"TestClass"];
+    [query whereKey:@"message" equalTo:@"test"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
+        if (error != nil) {
+            NSLog(@"[ERROR] %@", error);
+            return;
+        }
+        if ([objects count] > 0) {
+            NSLog(@"[FIND] %@", [[objects objectAtIndex:0] objectForKey:@"message"]);
+            return;
+        }
+        NSError *saveError;
+        NCMBObject *obj = [NCMBObject objectWithClassName:@"TestClass"];
+        [obj setObject:@"Hello, NCMB!" forKey:@"message"];
+        [obj save:&saveError];
+        if (saveError != nil ) {
+            NSLog(@"[SAVE-ERROR] %@", saveError);
+        }
+        
+        NSLog(@"[SAVE Done]");
+        
+    }];
     // Override point for customization after application launch.
     return YES;
 }
